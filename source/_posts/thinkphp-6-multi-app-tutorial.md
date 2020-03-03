@@ -7,7 +7,7 @@ category:
   - thinkphp
 ---
 
-# 创建多应用
+### 创建多应用
 
 以下创建两个应用，并创建对应的控制器
 
@@ -21,8 +21,8 @@ category:
 │   │   └── controller
 │   │       └── Index.php
 ```
-## 配置
-### 应用一
+### 配置
+#### 应用一
 ```php
 # /project/controller/Index.php
 namespace app\project\controller;
@@ -43,7 +43,7 @@ class Index extends BaseController
 }
 ```
 
-### 应用二
+#### 应用二
 
 ```php
 # /project2/controller/Index.php
@@ -66,7 +66,7 @@ class Index extends BaseController
 
 ```
 
-## 开启多应用
+### 开启多应用
 
 ```php
 # /config/app.php
@@ -74,7 +74,7 @@ class Index extends BaseController
 
 ```
 
-## 运行
+### 运行
 访问以下地址，你就可以看到已经成功了。
 - 你的域名/project
 - 你的域名/projec2

@@ -7,7 +7,7 @@ category:
   - thinkphp
 ---
 
-# 前言
+### 前言
 
 在实际开发ThinkPHP5的时候，【控制器】、【模型】两者的参数传递，通过 use class就能在方法里面使用到其实例化的类，这上我十分好奇它是怎么实现的
 
@@ -23,7 +23,7 @@ class User
 }
 ```
 
-# 发现
+### 发现
 [ReflectionClass](https://www.php.net/manual/zh/class.reflectionclass.php)
 
 查看了源码发现，它是使用一个叫【ReflectionClass】反射类来实现
@@ -34,7 +34,7 @@ class User
 4. 最后实例化控制器，执行目标方法 并且把参数带上
 
 
-# 自己实现一个
+### 自己实现一个
 
 ```php
 

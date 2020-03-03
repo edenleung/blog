@@ -6,7 +6,7 @@ category:
   - travis
 ---
 
-# 前言
+### 前言
 实现 `php` 项目带composer.json配置的，想发布release时，自动下载所需要的包，供其它人下载。
 
 **注意配置**
@@ -16,7 +16,7 @@ category:
 
  `deploy:file` 必须在 `before_deploy` 时生成，不然travis会找不到。
 
-## 配置
+### 配置
 
 ```bash
 # travis.yml

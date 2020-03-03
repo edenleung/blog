@@ -9,7 +9,7 @@ category:
 ---
 
 
-# 前端工作
+### 前端工作
 配置axios
 
 ```
@@ -20,7 +20,7 @@ const service = axios.create({
 })
 ```
 
-# 后端工作
+### 后端工作
 路由配置 或者 自动添加 header
 
 `Access-Control-Allow-Origin` 不能为*,必须配置前端域名
@@ -34,7 +34,7 @@ Route::miss('test/index')->header('Access-Control-Allow-Origin', 'http://前端�
 
 ```
 
-# 生成session
+### 生成session
 `localhost:9522` 前端域名与端口，80的不用填写
 
 ```php
@@ -50,7 +50,7 @@ Route::miss('test/index')->header('Access-Control-Allow-Origin', 'http://前端�
 
 ```
 
-# 验证
+### 验证
 
 ```php
 

@@ -6,7 +6,7 @@ category:
   - vue
 ---
 
-# 开启 JSX 编程
+### 开启 JSX 编程
 
 类似 React 的 Props 传参数、方法，实现父子组件通信与数据绑定
 
@@ -77,7 +77,7 @@ export default {
 
 ```
 
-# 组件以 Props 传递
+### 组件以 Props 传递
 
 ```javascript
 # App.vue

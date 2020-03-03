@@ -7,7 +7,7 @@ category:
   - thinkphp
 ---
 
-# 前言
+### 前言
 有时可能项目上或域名资源紧缺的情况，可以一个域名下有多个项目运行。
 
 以下就按部署ThinkPHP项目为例，将后端代码部署到二级目录
@@ -15,7 +15,7 @@ category:
 - www.domain.com 前端静态文件
 - www.domain.com/api 后端源码
 
-# 配置
+### 配置
 
 要注意以下几个环节
 

@@ -7,10 +7,10 @@ category:
   - swoole
 ---
 
-# 前言
+### 前言
 闲着学习下，利用swoole下载github对应项目的全部包
 
-# 目录
+### 目录
 ```
 .
 ├── composer.json
@@ -21,19 +21,19 @@ category:
 └── start.php
 ```
 
-# 流程
+### 流程
 1. 注入http服务类 Saber `public function __construct(Saber $saber, string $savePath)`
 2. 配置要下载的包r `public function scrape(array $options)`
 3. 开始爬取任务 `public function run()`
 4. 获取项目分页信息（一直循环到没有包为止） `protected function fetchPagination(string $package, string $lastVersion = '')`
 5. 下载包 `protected function download(string $version, string $url, string $ext)`
 
-#  使用包
+###  使用包
 - [symfony/dom-crawler](https://packagist.org/packages/symfony/dom-crawler)
 - [symfony/css-selector](https://packagist.org/packages/symfony/css-selector)
 - [swlib/saber](https://packagist.org/packages/swlib/saber)
 
-# 创建项目
+### 创建项目
 
 ```
 # composer.json
@@ -63,7 +63,7 @@ category:
 composer install
 ```
 
-# 编写
+### 编写
 - Scraper.php
 - Dom.php
 - start.php
@@ -320,7 +320,7 @@ $scraper->scrape([
 ])->run();
 ```
 
-# 运行
+### 运行
 ```
 php start.php
 ```

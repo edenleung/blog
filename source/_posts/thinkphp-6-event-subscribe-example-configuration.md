@@ -7,23 +7,23 @@ category:
   - thinkphp
 ---
 
-# 前言
+### 前言
 大概过了下ThinkPHP6文档，相比以前的tp5, 多了个订阅功能。
 
-## 对比
-### 订阅事件(subscribe)
+### 对比
+#### 订阅事件(subscribe)
 - 支持订阅多个事件(监听)
 
-### 事件监听(listener)
+#### 事件监听(listener)
 - 只能监听一个事件（跟TP5的行为大致一样）
 
-## 应用
+### 应用
 
 立马体验一波！
 
 场景： 订单发货后 触发事件 完成发送短信通信
 
-### 注册事件/监听器
+#### 注册事件/监听器
 
 ```php
 
@@ -52,7 +52,7 @@ return [
 ];
 ```
 
-### 绑定订单发货类
+#### 绑定订单发货类
 
 `app\event\OrderShipped`
 
@@ -89,7 +89,7 @@ class OrderShipped
 
 ```
 
-### 监听事件
+#### 监听事件
 `app\listener\OrderShipped`
 
 ```php
@@ -153,7 +153,7 @@ class Order
 }
 ```
 
-## 使用
+### 使用
 
 ```php
 
@@ -173,7 +173,7 @@ public function orderShip()
 }
 ```
 
-## 重点
+### 重点
 
 可能有些小伙伴有这么一个好奇，这个 `$order` 数据对象是否怎么传入到对应的处理方法，并且使用 `$event->order` 就可以获取订单信息
 

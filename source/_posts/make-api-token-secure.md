@@ -7,7 +7,7 @@ category:
 ---
 
 
-## 客户端生成
+### 客户端生成
 必要参数值
 - token
 - 时间戳
@@ -25,7 +25,7 @@ $sign = sha1($tmpStr);
 
 ```
 
-## 服务端验证
+### 服务端验证
 ```php
 
 $signature = $data['signature'];
